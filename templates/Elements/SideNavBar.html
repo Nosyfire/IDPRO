@@ -1,0 +1,29 @@
+
+<header class="flex-shrink-0 p-3 bg-white border-end border-1" style="width: 280px;">
+    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+      <span class="fs-5 fw-semibold">IDPro</span>
+    </a>
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <a class="btn btn-toggle align-items-center rounded collapsed"
+           {% if request.resolver_match.url_name == 'home' %}class="active nav-link px-2 link-secondary"{% endif %}
+           href="{% url 'home' %}" >
+          About
+        </a>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed"
+                {% if request.resolver_match.url_name == 'positions' %}class="active nav-link px-2 link-secondary"{% endif %}
+                data-bs-toggle="collapse" data-bs-target="#phd-collapse" aria-expanded="false">
+          PhD positions
+        </button>
+        <div class="collapse" id="phd-collapse" style="">
+          <ul class="btn-toggle-nav list-group-horizontal fw-normal pb-1 small p-2">
+            <li class="list-group-item"><a href="{% url 'positions' %}#info" class="link-dark rounded">Basic information</a></li>
+            <li class="list-group-item"><a href="{% url 'positions' %}#participants" class="link-dark rounded">Participants of the network</a></li>
+            <li class="list-group-item"><a href="{% url 'positions' %}#info" class="link-dark rounded">Associated Partners</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </header>

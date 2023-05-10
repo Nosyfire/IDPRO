@@ -1,0 +1,80 @@
+{% extends  'Pages/Base.html' %}
+{% load static %}
+
+{% block tilte %}
+    <title>PhD Positions</title>
+{% endblock %}
+
+{% block mainsection %}
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bold">PhD Positions</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">Intrinsically disordered proteins in health and disease: mechanisms, molecular context and opportunities for drug discovery</p>
+            </div>
+        </div>
+
+        <article class="container" id="info">
+            <h5>Basic information:</h5>
+            <p>The main goal of the project is to train  highly-skilled doctoral candidates through international, inter-sectoral and multi/inter-disciplinary collaboration.
+                Phd positions will be officially advertised from 1st of September 2023. Selected candidates are supposed to start before 31 August 2024.</p>
+            <br>
+            <p>All researchers recruited under this call must be doctoral candidates (i.e. not already in possession of a doctoral degree at the date of the recruitment).</p>
+            <p>Researchers are planned to be recruited for a maximum of 36 months. They must be enrolled in a doctoral programme and should work full-time on the project.</p>
+            <p>Please note: This grant aims to promote mobility. PhD students must  not  have  resided  or  carried  out  their  main  activity (work, studies, etc.) in the country of the recruiting beneficiary for more than 12 months in  the  36  months  immediately  before  their date  of  recruitment.</p>
+            <p>More information for candidates can be found <a href="https://rea.ec.europa.eu/system/files/2022-07/Guide%20for%20applicants%20-%20MSCA%20DN%202022_v2.1.pdf" target="_blank" >here</a>.</p>
+        </article>
+
+
+
+        <article class="container pt-2 pb-2" id="participants">
+            <h4>Participants:</h4>
+            <br>
+
+
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/per_jemth.png' as image_url %}
+                {% include "Elements/cards.html" with ref="https://www.imbim.uu.se/research-groups/cancer/jemth-per/" position="1 position" groupleader="Per Jemth" university="Uppsala University, Sweden" lab="Jemth lab" link=image_url description="The Jemth lab focuses on understanding the molecular underpinnings and evolution of protein interactions, with a special focus on coupled binding and folding of intrinsically disordered regions of proteins. In this context, the PhD candidate will investigate the role of flanking regions in motif-mediated protein interactions. The project involves a combination of bioinformatics and experimental approaches, and extensive collaboration within the IDPro network."  %}
+            </div>
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/Ylva_Ivarsson.jpg' as image_url %}
+                {% include "Elements/cards.html" with position="1 position" groupleader="Ylva Ivarsson" university="Uppsala University, Sweden" lab="Ivarsson lab" link=image_url %}
+            </div>
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/Birthe_Brandt_Kragelund.webp' as image_url %}
+                {% include "Elements/cards.html" with position="1 position" groupleader="Birthe Brandt Kragelund" university="University of Copenhagen, Denmark" lab="Birthe Brandt Kragelund lab" link=image_url %}
+            </div>
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/Kristian_Stromgaard.jpeg' as image_url %}
+                {% include "Elements/cards.html" with position="1 position" groupleader="Kristian Strømgaard" university="University of Copenhagen, Denmark" lab="Strømgaard lab" link=image_url %}
+            </div>
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/Malene_Ringkjobing_Jensen.jpg' as image_url %}
+                {% include "Elements/cards.html" with position="1 position" groupleader="Malene Ringkjøbing Jensen" university="Centre National de la Recherche Scientifique, France" lab="Malene Ringkjøbing Jensen lab" link=image_url %}
+            </div>
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/Stefano_Gianni.jpg' as image_url %}
+                {% include "Elements/cards.html" with position="1 position" groupleader="Stefano Gianni" university="Sapienza University of Rome, Italy" lab="Stefano Gianni lab" link=image_url %}
+            </div>
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/dosztanyi.jpg' as image_url %}
+                {% include "Elements/cards.html" with ref="https://dlab.elte.hu/" position="1 position" groupleader="Zsuzsanna Dosztányi" university="Eötvös Loránd University, Hungary" lab="Dlab" link=image_url %}
+            </div>
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/Alfonso_De_Simone.jpg' as image_url %}
+                {% include "Elements/cards.html" with position="1 position" groupleader="Alfonso De Simone" university="University of Naples, Italy" lab="Alfonso De Simone lab" link=image_url %}
+            </div>
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/michael_wehr.jpeg' as image_url %}
+                {% include "Elements/cards.html" with position="2 position" groupleader="Michael Wehr" university="Systasy SYS Germany" lab="Systasy Bioscience" link=image_url %}
+            </div>
+        </article>
+
+        <div class="container pt-2 pb-2" id="partners" >
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+            </div>
+
+        </div>
+
+{% endblock %}

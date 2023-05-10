@@ -1,0 +1,41 @@
+
+
+<!--<div class="col-md-6">-->
+<!--    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">-->
+<!--      <div class="col p-4 d-flex flex-column position-static">-->
+<!--        <strong class="d-inline-block mb-2 text-primary">{{ position }}</strong>-->
+<!--        <h3 class="mb-0">{{ groupleader }}</h3>-->
+<!--        <p class="card-text mb-auto">{{ university }}</p>-->
+<!--        <a href="{{ ref }}" class="stretched-link">{{ lab }}</a>-->
+<!--      </div>-->
+<!--      <div class="col-auto d-none d-lg-block">-->
+<!--        <img class="bd-placeholder-img img-thumbnail" src="{{ link }}" style="max-height: 200px" />-->
+<!--      </div>-->
+<!--    </div>-->
+<!--</div>-->
+<div class="row">
+  <div class="col-md-5">
+    <div class="card" >
+      <div class="d-flex g-0">
+        <div class="flex-shrink-1">
+          <img class="img-fluid rounded-start" src="{{ link }}"  style="height: 100%;max-width: 200px;object-fit: contain;"/>
+        </div>
+        <div class="flex-grow-1">
+          <div class="card-body">
+            <h5 class="card-title">{{ groupleader }}</h5>
+            <p class="card-text">{{ university }}</p>
+            <p class="card-text"><strong class="mb-2 text-primary">{{ position }}</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7">
+    <div class="card text-dark bg-light mb-3">
+      <div class="card-body">
+        <p class="card-text">{{ description }}</p>
+        <p class=""><a href="{{ ref }}" class="stretched-link" target="_blank" >{{ lab }}</a></p>
+      </div>
+    </div>
+  </div>
+</div>

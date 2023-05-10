@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block tilte %}
+    <title>IDPRO - Home</title>
+    {% endblock %}
+    {% include 'Elements/Scripts.html' %}
+</head>
+<body class="d-flex flex-column">
+
+{% include 'Elements/Header.html' %}
+
+<main class="flex-shrink-1">
+    {% include 'Elements/SideNavBar.html' %}
+    <section class="overflow-auto flex-grow-1">
+        {% block mainsection %}
+        {% endblock %}
+    </section>
+</main>
+
+{% include 'Elements/Footer.html' %}
+</body>
+</html>

@@ -1,0 +1,36 @@
+{% load static %}
+<!-- Navigation -->
+
+<header class="p-3 border-bottom">
+    <nav class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a {% if request.resolver_match.url_name == 'home' %}class="active nav-link px-2 link-secondary"{% endif %}
+                   href="{% url 'home' %}" class="nav-link px-2 link-secondary " aria-current="page">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="p-0 ps-1">Home</span>
+                </a></li>
+          <li><a {% if request.resolver_match.url_name == 'positions' %}class="active nav-link px-2 link-secondary"{% endif %}
+                    href="{% url 'positions' %}" class="nav-link px-2 link-secondary"><span class="p-0 ps-1">Positions</span></a></li>
+        </ul>
+
+
+        <div class="dropdown text-end">
+          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+
+
+

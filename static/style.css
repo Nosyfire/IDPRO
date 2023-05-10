@@ -1,0 +1,13 @@
+
+body {
+    height: 100vh;
+    max-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: -webkit-fill-available;
+    overflow-x: auto;
+    overflow-y: hidden;
+}

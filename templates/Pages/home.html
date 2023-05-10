@@ -1,0 +1,25 @@
+{% extends  'Pages/Base.html' %}
+{% load static %}
+
+{% block mainsection %}
+        <div class="px-4 py-4 my-3 text-center">
+            <h1 class="display-5 fw-bold">IDPro</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">Intrinsically disordered proteins in health and disease: mechanisms, molecular context and opportunities for drug discovery</p>
+            </div>
+        </div>
+        <article class="container">
+            <p>
+                The PhD fellowship is part of the EU-funded project, IDPro, which is an ambitious inter- and multidisciplinary Doctoral Network under the Horizon-Europe Marie Skłodowska-Curie Actions offering training for eleven PhD fellows.
+            </p>
+            <br>
+            <p>
+
+IDPro is an exceptional network of nine beneficiaries (eight academic and one industrial) and five partner organisations (four industrial and three academic) from seven different countries, with excellent track records in protein research and supervision. Together, we will train eleven doctoral candidates, with distinct competencies of relevance for the IDP field to secure future scientific breakthroughs in a rapidly developing field. In particular, we will investigate how IDPs interact, how interaction is affected by disease-related mutations, and assess how IDPs cause aberrant cellular signaling in relevant human disease models. Furthermore, we will design ligands that can be further developed into molecular probes, which could represent lead structures for the development of drugs. IDPro will strengthen an emerging field in biology and medicine with implications for both academia and industry in the European union.
+            </p>
+            <br>
+            <img src="{% static 'images/idpro.png' %}" class="rounded mx-auto d-block my-2" alt="" >
+        </article>
+
+
+{% endblock %}

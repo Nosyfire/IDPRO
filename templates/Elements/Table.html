@@ -1,0 +1,35 @@
+
+
+<div class="d-flex flex-column flex-md-row justify-content-between pb-0 ">
+        <h5>Filter in search result</h5>
+        <div class="d-flex">
+            {% block totalquery %}
+            {% endblock %}
+        {% block download %}
+            <button id="download" style="height: 100%" class = 'btn btn-outline-primary download ms-2' value="driver"  ><i class="fa-solid fa-file-arrow-down"></i></button>
+        {% endblock %}
+        </div>
+</div>
+
+    <div class="container-fluid mt-1 mt-sm-3 p-1 p-sm-2 ">
+        <!-- Example single danger button -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Select Column
+          </button>
+          <ul class="dropdown-menu" id="columnSelector" >
+              <hr style="order: 1">
+          </ul>
+        </div>
+        <div class="row d-flex" style="position: relative;">
+            <div class="loader">
+                <div class="spinner center"></div>
+            </div>
+            <div class="scrollbar-2 wrapper header-wrapper" >
+                <table class="table ui-table-reflow bootstrap-popup" id="table">
+                    {% block table %}
+                    {% endblock %}
+                </table>
+            </div>
+        </div>
+</div>
