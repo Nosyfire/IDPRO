@@ -37,44 +37,67 @@
             </div>
             <div class="row mb-2 mt-3" >
                 {% static 'images/group_leaders/Ylva_Ivarsson.jpg' as image_url %}
-                {% include "Elements/cards.html" with position="1 position" groupleader="Ylva Ivarsson" university="Uppsala University, Sweden" lab="Ivarsson lab" link=image_url %}
+                {% include "Elements/cards.html" with position="1 position" groupleader="Ylva Ivarsson" university="Uppsala University, Sweden" lab="Ivarsson lab" link=image_url description="" %}
             </div>
             <div class="row mb-2 mt-3" >
                 {% static 'images/group_leaders/Birthe_Brandt_Kragelund.webp' as image_url %}
-                {% include "Elements/cards.html" with position="1 position" groupleader="Birthe Brandt Kragelund" university="University of Copenhagen, Denmark" lab="Birthe Brandt Kragelund lab" link=image_url %}
+                {% include "Elements/cards.html" with position="1 position" groupleader="Birthe Brandt Kragelund" university="University of Copenhagen, Denmark" lab="Birthe Brandt Kragelund lab" link=image_url description="The Kragelund lab focuses on how structural disorder expands the molecular communication toolbox in biology and helps rethink protein interaction in the realm of structural disorder. One facet of the complexity of life is the cascade of signaling caused by thousands of proteins transferring unambiguous signals that instantly will regulate production and activities in the cell at the molecular level. Signal transfer initiated at the membrane is completed in the nucleus by the action of transcription factors and is conveyed through protein-protein interactions involving disordered regions. The PhD student will investigate the order-disorder cross-talk in the context of full-length transcription factors and how this cross-talk mediates regulation of transcription. By application of NMR spectroscopy and a suite of biophysical techniques we seek to map mechanisms of disorder-order crosstalk in transcription factors." %}
             </div>
             <div class="row mb-2 mt-3" >
                 {% static 'images/group_leaders/Kristian_Stromgaard.jpeg' as image_url %}
-                {% include "Elements/cards.html" with position="1 position" groupleader="Kristian Strømgaard" university="University of Copenhagen, Denmark" lab="Strømgaard lab" link=image_url %}
+                {% include "Elements/cards.html" with position="1 position" groupleader="Kristian Strømgaard" university="University of Copenhagen, Denmark" lab="Strømgaard lab" link=image_url description="" %}
             </div>
             <div class="row mb-2 mt-3" >
                 {% static 'images/group_leaders/Malene_Ringkjobing_Jensen.jpg' as image_url %}
-                {% include "Elements/cards.html" with position="1 position" groupleader="Malene Ringkjøbing Jensen" university="Centre National de la Recherche Scientifique, France" lab="Malene Ringkjøbing Jensen lab" link=image_url %}
+                {% include "Elements/cards.html" with position="1 position" groupleader="Malene Ringkjøbing Jensen" university="Centre National de la Recherche Scientifique, France" lab="Malene Ringkjøbing Jensen lab" link=image_url description="" %}
             </div>
             <div class="row mb-2 mt-3" >
                 {% static 'images/group_leaders/Stefano_Gianni.jpg' as image_url %}
-                {% include "Elements/cards.html" with position="1 position" groupleader="Stefano Gianni" university="Sapienza University of Rome, Italy" lab="Stefano Gianni lab" link=image_url %}
+                {% include "Elements/cards.html" with position="1 position" groupleader="Stefano Gianni" university="Sapienza University of Rome, Italy" lab="Stefano Gianni lab" link=image_url description="" %}
             </div>
             <div class="row mb-2 mt-3" >
                 {% static 'images/group_leaders/dosztanyi.jpg' as image_url %}
-                {% include "Elements/cards.html" with ref="https://dlab.elte.hu/" position="1 position" groupleader="Zsuzsanna Dosztányi" university="Eötvös Loránd University, Hungary" lab="Dlab" link=image_url %}
+                {% include "Elements/cards.html" with ref="https://dlab.elte.hu/" position="1 position" groupleader="Zsuzsanna Dosztányi" university="Eötvös Loránd University, Hungary" lab="Dlab" link=image_url description="The main interest of the Dosztányi lab is to study how the sequence of intrinsically disordered proteins is related to their structural and functional properties and their involvement in various diseases. They developed various computational tools to aid research in this field, including prediction tools (e.g. IUPred and ANCHOR) and databases (e.g. DIBS, PhaSePro). The main task of the Phd student will be to develop novel methods to study interaction sites within IDPs by considering context information and to understand how these interactions shape interaction networks at the proteome level, focusing on cases with biomedical relevance." %}
             </div>
             <div class="row mb-2 mt-3" >
                 {% static 'images/group_leaders/Alfonso_De_Simone.jpg' as image_url %}
-                {% include "Elements/cards.html" with position="1 position" groupleader="Alfonso De Simone" university="University of Naples, Italy" lab="Alfonso De Simone lab" link=image_url %}
+                {% include "Elements/cards.html" with position="1 position" groupleader="Alfonso De Simone" university="University of Naples, Italy" lab="Alfonso De Simone lab" link=image_url description="" %}
             </div>
             <div class="row mb-2 mt-3" >
                 {% static 'images/group_leaders/michael_wehr.jpeg' as image_url %}
-                {% include "Elements/cards.html" with position="2 position" groupleader="Michael Wehr" university="Systasy SYS Germany" lab="Systasy Bioscience" link=image_url %}
+                {% include "Elements/cards.html" with position="2 position" groupleader="Michael Wehr" university="Systasy SYS Germany" lab="Systasy Bioscience" link=image_url  description="Systasy Bioscience GmbH, a Munich-based biotech company, uses advanced barcoding technologies and next-generation disease modeling to facilitate drug discovery in complex diseases. Systasy’s innovative and proprietary technologies provide a fast and cost-effective approach to mapping disease pathways from the cellular level to the patient cohort level to enable next-generation medicine. Systasy’s barcoding technology uses molecular barcodes to track different entities within one experiment. These entities include activities of targets and cellular pathways, cell types and patient material, as well as technical features such as biological replicates, wells, and plates. When applied to next-generation stem cell-derived disease models, Systasy’s barcoded and cell-based profiling assays enable multiplexed and scalable drug screening in early-stage drug discovery." %}
             </div>
         </article>
 
-        <div class="container pt-2 pb-2" id="partners" >
+        <article class="container pt-2 pb-2" id="associated_partners">
+            <h4>Associated Partners:</h4>
+            <br>
 
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/Schuler.jpg' as image_url %}
+                {% include "Elements/cards.html" with ref="https://schuler.bioc.uzh.ch/" position="" groupleader="Ben Schuler" university="University of Zurich, Switzerland" lab="Schuler lab" link=image_url description="The Schuler lab investigates the structure, dynamics, and functions of biomolecules with single-molecule spectroscopy. In particular, we focus on systems with pronounced conformational heterogeneity that is difficult to resolve with other techniques. Examples are intrinsically disordered proteins (IDPs), protein-nucleic acid interactions, protein misfolding, or the behavior of proteins inside live cells. A key goal of our work is to reach mechanistic understanding based on quantitative physical models. <br> Addressing these questions requires a broad spectrum of complementary methods, and thus a multidisciplinary team of scientists from physics, chemistry, and biology who closely collaborate within the group. We use an integrative approach ranging from molecular biology and protein chemistry to a wide range of biophysical methods, single-molecule spectroscopies, and simulations. An important component of our research is the continuous development of single-molecule techniques and analysis methods for probing biological macromolecules over a wide range of conditions and timescales."  %}
             </div>
 
-        </div>
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/jesper.jpeg' as image_url %}
+                {% include "Elements/cards.html" with ref="https://testacenter.com" position="" groupleader="Jesper Hedberg" university="Testa Center, Sweden" lab="Testa Center" link=image_url description="Testa Center is a private-public initiative between the Swedish government and Cytiva to establish an innovation hub for biological production and to secure the growth of the life science industry and its manufacturing capabilities. The main objective is to bridge the gap from discovery to industrialization. The Testa Center has the expertise and the equipment to help teams scale up from lab bench-scale to industrial-scale production. Testa Center is operated as a non-profit company."  %}
+            </div>
+
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/Franziska_Zosel.jpeg' as image_url %}
+                {% include "Elements/cards.html" with ref="" position="" groupleader="Franziska Zosel" university="Novo Nordisk, Denmark" lab="Novo Nordisk" link=image_url description=""  %}
+            </div>
+
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/David_Brown.jpeg' as image_url %}
+                {% include "Elements/cards.html" with ref="" position="" groupleader="David Brown" university="Servier, France" lab="Servier" link=image_url description=""  %}
+            </div>
+
+            <div class="row mb-2 mt-3" >
+                {% static 'images/group_leaders/Lovisa.png' as image_url %}
+                {% include "Elements/cards.html" with ref="" position="" groupleader="Lovisa Holmberg Schiavone" university="AstraZeneca, Sweden" lab="AstraZeneca" link=image_url description=""  %}
+            </div>
+
+        </article>
 
 {% endblock %}
